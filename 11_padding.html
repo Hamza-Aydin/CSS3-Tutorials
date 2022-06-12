@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding-CSS3-</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /*box sizing'i buraya da yazabiliriz*/
+        }
+        div.box1{
+            width: 500px;/*bunlar sadece content kısmını etkilir bu yazdığımız ölçüler*/
+            height: 200px;
+            border: 5px blue solid;
+            margin: 10px auto;/*ilk kısım yukarı-aşağı, ikinci kısım sağ-sol*/
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+            /*padding:20px; şeklinde tek satırda da verebiliriz her yerine*/
+            /*bizim div'imizin boyutu border+padding+content olmuş oluyor*/
+        }
+        div.box2{
+            width: 500px;
+            height: 200px;
+            border: 5px red solid;
+            margin: 0 auto;
+            padding: 100px; /*bu çok daha büyük görünecek çünkü content alanı da var kapladığı yerde*/
+            box-sizing: border-box; /*böylece kutunun toplam boyutu 500'e 200 olarak korundu content kütültülerek*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1">
+       <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quisquam.</b> 
+    </div>
+    
+    <div class="box2">
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos!</b>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Clas-CSS3-</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+
+        /*pseudo class'lar uyguladığımız elementlerin durumlarını değiştirmemizi sağlar
+                                     bir sürü çeşidi var w3schools'dan bakabiliriz*/
+        a{
+            font-size: 25px;
+        }
+        a:hover{ /*bu üzerine geldiğimizde olan durumlarını değiştirmemizi sağlar*/
+            color: red;
+        }
+        a:link{/*henüz üzerine tıklanmadıysa*/
+            color:purple
+        }
+        a:visited{/*tıkladıktan sonraki görünümü*/
+            color: aqua;
+        }
+        a:active{/* tam tıklarkenki durumu*/
+            color: yellow;
+        }
+        input{
+            font-size: 1.5rem;
+            padding: 10px;
+            border-radius: 4px;
+            border: 2px black solid;
+        }
+        input:focus{/*input'a tıkladığımız zamanki durumlar*/
+            outline:0 ;
+            border: red solid 2px;
+        }
+        a#i{
+            color: pink;
+            background-color: purple;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 2rem;
+        }
+        a#i:hover{
+            color: purple;
+            background-color: white;
+            border: 2px pink solid;  
+        }
+
+    </style>
+
+</head>
+<body>
+    <a href="#">this is a text link</a>
+    <br>
+    <hr>
+    <input type="text" placeholder="name..."> 
+    <i class="fa-solid fa-share"></i>
+    <br>
+    <hr>
+    <a href="https://www.instagram.com/" target="_blank" id="i">İnstagram</a>
+    
+</body>
+</html>

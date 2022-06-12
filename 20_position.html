@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions-CSS3-</title>
+    <style>
+        *{
+            font-size: 1.5rem;
+        }
+        .nav{
+            width: 50%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: fixed;
+            right: 20px;/*bu şekilde istediğimiz yere fixleyebiliriz(fixed veya relative konumunda)*/
+            bottom: 10px;
+        }
+        .red{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;/*şu an da bulunduğu konuma göre position vermemizi sağlar*/
+            top: 35px;
+            left: 45px;
+            z-index: 1;/*bu değeri büyük olan üst üste gelince önce görünür,kordinat sistemi mantığı*/
+        
+        }
+        .blue{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            top: 0px;
+            left: 15px;
+        }
+        .outdoorbox{
+            width: 300px;
+            height: 300px;
+            background-color:grey;
+            position: relative;/*burası static olmaması lazım*/
+            left: 500px;
+            top:10px/*ikisi birlikte taşınmış olur*/
+        }
+        .indoorbox{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position: absolute;/*parent'ına göre konumlandırma yapmamızı sağlar ama parent'ı da relative veya fixed olması lazım*/
+            top: 10px;         /*eğer öle olmazsa bir üst parent'ına yani body'e göre konumlanır*/
+            right: 15px;
+        }
+        span{
+            width: 50px;
+            height: 50px;
+            background-color: darkmagenta;
+            display: inline-block;
+            position: relative;
+            left: 75px;/*bu aslında hayali olarak gelmiş oluyor yazı kaymıyor yani*/
+            z-index: -1;
+        }
+    </style>
+</head>
+<body style="height:1000px ;"> <!--scrool çıksın diye sınırladık-->
+    <div class="nav">Udemy</div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <hr>
+    <div class="outdoorbox">
+        <div class="indoorbox"></div>
+    </div>
+    <hr>
+    <span></span>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, quis?
+</body>
+</html>

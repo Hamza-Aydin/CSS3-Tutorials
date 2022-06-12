@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors-CSS-</title>
+<style>
+    /*h1{ 
+       color: blueviolet;
+       background-color: aquamarine; 
+    }
+    p{
+        color: blueviolet;
+        background-color: aquamarine;
+    }*/
+    /*h1,p{
+        color: blueviolet;
+        background-color: aquamarine;
+    } -buradaki virgül ve anlamına gelir */
+   /* #logo{
+        color: rgb(0, 251, 29);
+        background-color: blue;
+    } /*bu sadece id'si logo olanlarını seçmemizi sağlar*/ 
+    /*.info{
+        color: rgb(21, 17, 9);
+        background-color: thistle;
+    } /* bu da class ismine göre seçim yapmamızı sağlar*/
+   /* #logo,.lead{
+        color: antiquewhite;
+        background-color: slategray;
+    } bu da ide'si logo olan ve sınıfı lead olanlarını seçmemizi sağlar ayrı ayrı*/
+    /*.lead#para1{
+        color: yellow;
+        background-color: black;
+    } bu da kesişim mantığında seçim yapmamızı sağlar*/
+    /*a{
+        text-decoration: none;
+    } bu da linklerimizin altının çizili olmamasını sağlar*/
+    /*ul li a{
+        text-decoration: none;
+    } hiyeralşik seçim mantığı parent ve child elementler olayı iç içe olanları bu şekilde seçeriz*/
+    /*.info span{
+        color: red;
+    } class'ı info olanların içinden span'ları çektik*/
+    /*.info .primary{
+        color: blue;
+    } bu da class içinden class seçmemizi sağlar(aralarda boşluk olması şart)*/
+    /**{
+        font-size: 30px;
+    } evrensel seçici olarak geçer bazı varsıyal değerleri kaldırmak veya değiştirmek istediğimizde kullanırız*/
+</style>
+</head>
+<body>
+    <header>
+        <h1>Başlık 1</h1>
+        <h1 id="logo">Logo</h1>
+        <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">services</a></li>
+        </ul>
+    </header>
+    <h1>Başlık 2</h1>
+    <p id="para1" class="lead info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, blanditiis!.</p>
+    <p class="info">Lorem ipsum <span class="primary">dolor</span>  sit amet, consectetur adipisicing elit. A, debitis?</p>
+    <p class="info">Lorem, ipsum <span>dolor</span>  sit amet consectetur adipisicing elit. Nulla, quam.</p>
+    <p>test paragrafı</p>
+    <a href="#">home</a>
+</body>
+</html>

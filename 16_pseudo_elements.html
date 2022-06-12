@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element-CSS3-</title>
+    <style>
+        .kimlik{
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            line-height: 1.5em;
+        }
+        .kimlik::first-line{/*belli kısımları seçip onların durumlarını değiştirmemizi sağlar*/
+            color: blue;
+        }
+        .kimlik::first-letter{
+            color: red;
+            font-size: 60px;
+        }
+        .kimlik::after{
+            content: url("https://imgs.search.brave.com/AIfsNizoKK7u3iEnPpBdkf_YoNwvltiZdPYHiAeAj34/rs:fit:920:512:1/g:ce/aHR0cHM6Ly93Ny5w/bmd3aW5nLmNvbS9w/bmdzLzY2NS80Njkv/cG5nLXRyYW5zcGFy/ZW50LWxvZ28tY29t/cHV0ZXItaWNvbnMt/aW5zdGFncmFtLWxv/Z28tbWlzY2VsbGFu/ZW91cy1jb21wYW55/LXRleHQucG5n");
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="kimlik">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, voluptatem? Necessitatibus blanditiis, consectetur consequuntur nulla magni rerum deleniti perspiciatis, reiciendis soluta molestias cum quam odio, eveniet neque qui ab fugit voluptas. Provident, rerum enim? Iusto esse saepe harum, ipsam nisi eos corrupti aspernatur accusantium tempora dolorum sapiente, itaque asperiores ducimus ea quia dolores! Magnam culpa fugiat, doloremque, veritatis praesentium earum quisquam dolor repellat natus commodi recusandae facilis labore porro odio animi alias? Error fuga laborum molestias. Officiis obcaecati sit ducimus accusantium at temporibus rerum modi autem porro maiores explicabo assumenda incidunt reprehenderit, deserunt voluptatum rem earum dignissimos laudantium. Velit, hic.
+    </p>
+</body>
+</html>

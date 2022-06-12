@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-CSS3-</title>
+    <style>
+        *{
+            font-size: 30px;
+        }
+        .box{
+            width: 50%; /*block eleman olduğu için bu değerleri versek bile bir sonraki eleman alt satıra geçer*/
+            height: 100px;
+        }
+        .box1{
+            background-color: blueviolet;
+        }
+        .box2{background-color: blue;}
+        #testlink{ /*inline olduğu için biz böyle değer versek bile değiştiremeyiz*/
+            display: inline-block;/*ancak böyle verirsek olur ama yine yazdığımız yazılar yanına gelir*/
+            width: 100px;
+            height: 100px;
+        }
+/*inline-block'u asıl kullanacağımız yerler navigation barlarda falan bir link verdiğimizde sadece üstüne
+tıkladığımızda değil verdiğimiz bölgelere tıkladığında da kullanıcının linkin çalışmasını sağlar*/        
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <br>
+    <div class="box box2"></div>
+    <a href="#" id="testlink">test link</a>
+    merhaba <!--a etiketi inline olduğu için bu yazdığımız yazı yanına gelir direkt-->
+</body>
+</html>

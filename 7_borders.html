@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders-CSS3</title>
+<style>
+    *{
+        font-size: 35px;
+    }
+    #box1{
+        background-color: #a7a7a7;
+        border-width: 4px; /*sınırlarımızın kalınlığını ayarlıyoruz*/
+        border-color: red; /*sınırımızın rengi*/
+        border-style:dashed; /*sınırımızın şekli style'ı solid en yaygın olanı*/
+        /*border: 4px red solid; böyle tek satırda da yazılabilir*/
+        /*border-left-width: 4px; sadece belirli kısımlara da border verebiliriz*/
+    }
+    #box2{
+        background-color: aquamarine;
+        border: blue 8px solid;
+        border-radius: 8px; /*sınırların köşelerini ovelleştirmeyi sağlar*/
+    }
+    #box3{
+        width:120px;
+        height: 120px;
+        border-radius: 120px;/*height ile aynı olursa radius değeri direkt oval hala gelmiş olur pencere*/
+        background-color: blueviolet;
+    }
+</style>
+</head>
+<body>
+    <div id="box1">
+        <h1>BOX-1</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, molestiae.</p>
+    </div>
+    <br>
+    <div id="box2">
+        <h1>BOX-2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ipsa!</p>
+    </div>
+    <br>
+    <div id="box3"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Hiyerarşisi</title>
+</head>
+<style>
+    h1{
+        color: blue;
+        }
+    #logo{
+        color: red !important;
+    } /*burada logo ide'li olan üstte olsaydı bütün başlıklar mavi olurdu çünkü css yukarıdan aşağı çalışır*/    
+    /*important verirsek aşağıda tekrar yazılsa bile bu özllik değişmez*/
+    a{
+        text-decoration: none;
+    }
+    ul li a{
+        text-decoration: underline;
+    } 
+    /*aynı şekilde link ile 2 tane css dosyası eklersek son eklenenin dediği oluyor ortak özelliklerde*/
+</style>
+<body>
+    <header>
+        <h1>Başlık 1</h1>
+        <h1 style="color:yellow" id="logo">Logo</h1> <!--yine bu rengi değiştirir çünkü daha aşağıda-->
+        <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">services</a></li>
+        </ul>
+    </header>
+    <h1>Başlık 2</h1>
+    <p id="para1" class="lead info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, blanditiis!.</p>
+    <p class="info">Lorem ipsum <span class="primary">dolor</span>  sit amet, consectetur adipisicing elit. A, debitis?</p>
+    <p class="info">Lorem, ipsum <span>dolor</span>  sit amet consectetur adipisicing elit. Nulla, quam.</p>
+    <p>test paragrafı</p>
+    <a href="#">home</a>
+</body>
+</html>

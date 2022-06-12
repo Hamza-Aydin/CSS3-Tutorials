@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child Selectors -CSS3-</title>
+    <style>
+        *{
+            font-size: 1.5rem;
+        }
+        p:nth-child(1){
+            color: crimson;
+        }
+        p:nth-child(3){
+            color: darkmagenta;
+        }
+        p:first-child{/*birinci çocuğu seçmemizi sağlar*/
+            background-color: aquamarine;
+        }
+        p:nth-child(5){
+            background-color: brown;
+            color: white;
+        }
+        p:nth-child(even){ /*sadece çift olanları seçmemizi sağlar*/
+            font-size: 50px;
+            background-color: yellow;
+        }
+        p:nth-child(odd){/*tek sayıları seçmemizi sağlar*/
+            background-color: orange;
+            color: darkblue;
+        }
+        ul{
+            list-style-type:square;
+        }
+        ul li:nth-child(2n){/*n ve b sıfırdan başlar bu şekilde formüllendirme de yapabiliriz*/
+            color: red;
+        }
+        ul li:nth-child(2n+1){
+            color: blueviolet;
+        }
+        ul li:nth-child(n+3){/*üçüncü satırdan itibaren boyar*/
+            background:rgb(170, 255, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>madde1</li>
+        <li>madde2</li>
+        <li>madde3</li>
+        <li>madde4</li>
+        <li>madde5</li>
+        <li>madde6</li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, dolor?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, aliquam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, repudiandae!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, voluptates.</p>
+</body>
+</html>

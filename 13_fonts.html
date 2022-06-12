@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts-CSS3-</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <!--bunu google fonts'dan istedğimiz familinin linkini buraya koyup sayfamıza ekleyebiliriyoruz-->
+    <style>
+        *{
+            font-size: 30px;
+        }
+        h1{
+            font-family: 'Blaka', cursive;/*üç tane olmasının sebebi farklı cihazlarda ilkinin bulunmamasına yönelik*/
+            font-size: 60px;
+            color: blue;
+        }
+        html{
+            font-size: 25px;
+        }
+        p{
+            font-size: 1.25rem;
+            /*em=bulunduğu elementin font-size'ına göre göreceli bir uzunluk girmemizi sağlar*/
+            /*rem=genel html'ye göre göreceli uzunluk girmemeizi sağlar 2.5rem dersek defult 16 olduğu için 40px olur*/ 
+            /*%=bulunduğu parent'nın font'un yüzdesini vermemzi sağlar*/
+            line-height: 1.5em;/*satırlar arası boşluğu ayarlar*/
+        }
+        div{
+            width: 500px;
+            height: auto;
+            border: red solid 4px;
+            font-style: italic; /*yazımızın stilini değiştirmemizi sağlar*/
+            font-weight: bolder;/*kalınlık incelik girebilmemizi sağlar*/
+
+        }
+        div span{
+            font-size: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Başlık 1</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos recusandae dignissimos laborum? Provident harum eligendi ea quas molestias quaerat distinctio enim laboriosam vel velit. Perferendis fugit ducimus voluptas voluptatum esse ipsa aperiam eaque odio incidunt excepturi deserunt et, vero similique deleniti suscipit beatae sequi dolor voluptate corporis ex qui! Laborum, dicta? Sed facilis dolores accusamus culpa quasi, ratione assumenda voluptatem pariatur inventore voluptate quia adipisci cupiditate nulla ipsam explicabo optio obcaecati quidem magni. Delectus libero nulla quae. Dolorum dolore eveniet et nisi voluptates totam quod temporibus aliquid cum, eum, earum cupiditate deserunt natus obcaecati asperiores consequuntur praesentium? Dolorem, eum excepturi!</p>
+    <hr>
+    <div>
+        <p>Lorem, ipsum dolor sit amet <span>consectetur</span>  adipisicing elit. Provident, magnam.</p>
+    </div>
+</body>
+</html>

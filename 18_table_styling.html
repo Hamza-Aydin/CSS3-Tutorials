@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling-CSS3-</title>
+    <style>
+        *{
+            font-size: 1.5rem;
+        }
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;/*tek çizgi olarak kullanmamızı sağlıyor*/
+        }
+        table{ /*sadece tablo ile igiligi işlemler ypamamızı sağlar*/
+            width: 50%;
+            margin: 0 auto;
+        }
+        th,td{
+            padding: 15px;
+        }
+        thead tr{
+            background-color: gray;
+            color:blue
+        }
+        tbody tr{
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover{
+            background-color: #ddd;
+            cursor: cell;
+        }
+    </style>
+
+</head>
+<body>
+    <table class="çalışan">
+        <thead>
+            <tr>
+                <th>İsim:</th>
+                <th>Departman:</th>
+                <th>Maaş:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hamza</td>
+                <td>Web</td>
+                <td>15k</td>
+            </tr>
+            <tr>
+                <td>Selin</td>
+                <td>Siber</td>
+                <td>17k</td>
+            </tr>
+            <tr>
+                <td>Murat</td>
+                <td>Finans</td>
+                <td>10k</td>
+            </tr>
+            <tr>
+                <td>Pelin</td>
+                <td>Muhasebe</td>
+                <td>8k</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
